@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  color: #333333;
+  /* background-color: #e0e8ef; */
+}
+
+button {
+  transition: 300ms ease-in-out;
+}
+
+.scroll-bar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #6c757d transparent;
+  -webkit-overflow-scrolling: touch;
+}
+
+label {
+  font-family: Dm Sans, sans-serif;
+}
+.scroll-bar::-webkit-scrollbar {
+  width: 8px;
+  overflow: hidden;
+}
+
+.scroll-bar::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: 4px;
+}
+
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #6c757d;
+  border-radius: 100px;
+  border: 2px solid #f1f1f1;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-bar::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}
+
+.scroll-bar {
+  scrollbar-width: thin;
+  scrollbar-color: #6c757d transparent;
+}
+
+.scroll-bar {
+  scroll-behavior: smooth;
+}
+T .gradient {
+  background: linear-gradient(135deg, #0f3d60, #102634, #4e8098);
+  transition: background 300ms ease-in-out;
+}
+
+.gradient:hover {
+  background: linear-gradient(135deg, #1a5a7a, #18304a, #6c9db7);
+}
+
+.shadow {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.mm-active {
+  border-radius: 8px;
+  background-color: #2b3e4e;
+  /* Slightly lighter shade for active state */
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#mm-list li {
+  padding: 5px 0;
+}
+
+#mm-list li a {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#mm-list li a svg {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.phone-input input {
+  height: 3rem;
+  border-radius: 5px;
+  padding: 10px;
+  background: none;
+  outline: none;
+  border: 1px solid #d1d5db;
+}
+
+.button-hover {
+  transition: 250ms ease-in-out;
+}
+.button-hover:hover {
+  background-color: #093754;
+}
